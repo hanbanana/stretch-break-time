@@ -86,7 +86,7 @@ $(document).ready(function () {
 
 
   function alertWin() {
-    setTimeout(function(){ alert("Let's stretch your arms!"); window.location.reload(false); }, 5000);
+    setTimeout(function(){ alert("Let's stretch your arms!"); window.location.reload(false); }, 60000);
   }
 
   $("#confirmButton").on("click", function() {
