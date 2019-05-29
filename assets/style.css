@@ -1,19 +1,38 @@
 
-  #myProgress {
+ body {
+   background-color: rgba(6, 133, 138, 0.966);
+   font-family: 'Raleway', sans-serif;
+ }
+
+ h1 {
+   color: white;
+ }
+
+ .container {
+   margin-top: 100px;
+   color: rgba(255, 255, 255, 0.753);
+ }
+
+ #myBar1 {
+  width: 250px;
+  background-color: rgb(4, 91, 95);
+  margin-left: auto;
+  margin-right: auto;
+  height: 10px;
+}
+ 
+ #myProgress {
   width: 100%;
-  height: 30px;
-  background-color: #4CAF50;
+ 
+  background-color: grey;
   text-align: center;
   line-height: 30px;
   color: white;
+  height: 10px;
 }
 
-#myBar1 {
-  width: 100px;
-  background-color: #ddd;
-  margin-left: auto;
-  margin-right: auto;
-
+#footerLink {
+  color: rgba(255, 255, 255, 0.753);
 }
 
   .footer {
@@ -30,10 +49,7 @@
 
   @media only screen and (max-width: 600px) {
 
-    #myBar1 {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
+
 
 };
 
