@@ -1,12 +1,21 @@
 
  body {
    background-color: rgba(6, 133, 138, 0.966);
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Poppins', sans-serif;
  }
 
  h1 {
    color: white;
+   font-size: 75px;
  }
+
+ #start {
+   color: white;
+ }
+
+ #reSet {
+  color: white;
+}
 
  .container {
    margin-top: 100px;
@@ -24,11 +33,15 @@
  #myProgress {
   width: 100%;
  
-  background-color: grey;
+  background-color: rgb(163, 162, 162);
   text-align: center;
   line-height: 30px;
   color: white;
   height: 5px;
+}
+
+#reSet {
+  display: none;
 }
 
 #footerLink {

@@ -1,12 +1,13 @@
 
 $(document).ready(function () {
 
+
  
   function move() {
     var elem = document.getElementById("myProgress");  
-    var countdown =  document.getElementById("counting");
+    var countdown =  document.getElementById("countdown");
     var width = 100;
-    var id = setInterval(frame, 100);
+    var id = setInterval(frame, 300);
     function frame() {
       if (width <= 220) {
             width--; 
@@ -15,6 +16,7 @@ $(document).ready(function () {
       } 
       if (width <= 0) {
     clearInterval(id);
+    location.reload();
       }
     }
 
@@ -31,6 +33,12 @@ $(document).ready(function () {
 
   $("#start").on("click", function() {
     move();
+    $("#start").hide();
+    $("#reSet").show();
+  })
+
+  $("#reSet").on("click", function() {
+    location.reload();
   })
 
   
@@ -77,6 +85,15 @@ $(document).ready(function () {
   // })
 
 
+  function alertWin() {
+    setTimeout(function(){ alert("Let's stretch your arms!"); window.location.reload(false); }, 5000);
+  }
+
+  $("#confirmButton").on("click", function() {
+  
+    alertWin();
+
+  })
 
 
 

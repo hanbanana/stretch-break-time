@@ -22,7 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -34,22 +34,50 @@
     <div class='container text-center'>
         <br>
         <h1>Stretch your arms.</h1>
-        <br>
+        <br><br>
         <div id="myBar1">
             <div id="myProgress"></div>
         </div>
 
-        <span id="countdown">10</span> second<span id="plural">s left</span>
+        <span id="countdown">30</span> second<span id="plural">s left</span>
         <br><br>
-        <button id="start" onclick="start_countdown()">Start CountDown</button>
+        <button type="button" class="btn btn-white" id="start">Start CountDown</button>
+        <button type="button" class="btn btn-white" id="reSet">Reset CountDown</button>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="firstModal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Do you want to stretch 5 minutes later?
+                    <br>*if you click 'Yes', we will give you a notice 5 minutes later. <br>Please don't close this site.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="confirmButton">Yes</button>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 
 
     <div class="footer">
-            <a href="https://www.google.com" target="_blank" id="footerLink"><p>...no, maybe next time</p></a>
-          </div>
-
+        <a href="#" target="_blank" id="footerLink" data-toggle="modal"
+            data-target="#exampleModal">
+            <p>...no, maybe next time?</p>
+        </a>
+        <!-- <button type="button" class="btn btn-secondary" id="testButton">No</button> -->
     </div>
 
     <script src="app.js"></script>
