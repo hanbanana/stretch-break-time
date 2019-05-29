@@ -14,11 +14,11 @@
  }
 
  #myBar1 {
-  width: 250px;
+  width: 220px;
   background-color: rgb(4, 91, 95);
   margin-left: auto;
   margin-right: auto;
-  height: 10px;
+  height: 5px;
 }
  
  #myProgress {
@@ -28,7 +28,7 @@
   text-align: center;
   line-height: 30px;
   color: white;
-  height: 10px;
+  height: 5px;
 }
 
 #footerLink {

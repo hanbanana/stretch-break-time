@@ -8,7 +8,7 @@ $(document).ready(function () {
     var width = 100;
     var id = setInterval(frame, 100);
     function frame() {
-      if (width <= 100) {
+      if (width <= 220) {
             width--; 
         elem.style.width = width + '%'; 
         // elem.innerHTML = 100 - width  + '%';        
